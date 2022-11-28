@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="script/currentTime.js"></script>
+    <script src="script/londonTime.js"></script>
+    <script src="script/NewYorkTime.js"></script>
+    <script src="script/tokyoTime.js"></script>
+    <title>World Clock</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="clock" id="location-local">
+                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" alt="Visual analog clock" viewBox="0 0 120 120" class="analog-clock">
+                    <g>
+                        <path d="M 0 60 c 0 33 28 60 60 60 s 60 -26 60 -60 S 93.137 0 60 0 S 0 26 0 60 z" class="analog-clock_face"></path>
+                        <g class="analog-Numbers">
+                            <text x="82" y="21" class="clock-number minor">1</text>
+                            <text x="99" y="37" class="clock-number minor">2</text>
+                            <text x="105" y="60" class="clock-number major">3</text>
+                            <text x="99" y="82" class="clock-number minor">4</text>
+                            <text x="82" y="99" class="clock-number minor">5</text>
+                            <text x="60" y="105" class="clock-number major">6</text>
+                            <text x="38" y="99" class="clock-number minor">7</text>
+                            <text x="21" y="82" class="clock-number minor">8</text>
+                            <text x="15" y="60" class="clock-number major">9</text>
+                            <text x="21" y="38" class="clock-number minor">10</text>
+                            <text x="37" y="21" class="clock-number minor">11</text>
+                            <text x="60" y="15" class="clock-number major">12</text>
+                        </g>
+                        <g class="analog-clock_hands">
+                            <path d="M 60 60 V 20" id="hour-hand"></path>
+                            <path d="M 60 60 V 6" id="minute-hand"></path>
+                            <path d="M 60 60 V 5" id="seconds-hand"></path>
+                            <path d="M63 60a3 3 0 11-6 0 3 3 0 016 0z" class="analog-clock__pin"></path>
+                            <path d="M61 60a1 1 0 10-2 0 1 1 0 002 0z" class="analog-clock__pin-inner"></path>
+                        </g> 
+                    </g>
+                </svg>
+                <h2 id="digital-clock"></h2>
+                <h3 id="digital-date"></h3>
+                <h3>Local Time</h3>
+            </div>
+            <div class="clock" id="location-london">
+                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" alt="Visual analog clock" viewBox="0 0 120 120" class="analog-clock">
+                    <g>
+                        <path d="M 0 60 c 0 33 28 60 60 60 s 60 -26 60 -60 S 93.137 0 60 0 S 0 26 0 60 z" class="analog-clock_face"></path>
+                        <g class="analog-Numbers">
+                            <text x="82" y="21" class="clock-number minor">1</text>
+                            <text x="99" y="37" class="clock-number minor">2</text>
+                            <text x="105" y="60" class="clock-number major">3</text>
+                            <text x="99" y="82" class="clock-number minor">4</text>
+                            <text x="82" y="99" class="clock-number minor">5</text>
+                            <text x="60" y="105" class="clock-number major">6</text>
+                            <text x="38" y="99" class="clock-number minor">7</text>
+                            <text x="21" y="82" class="clock-number minor">8</text>
+                            <text x="15" y="60" class="clock-number major">9</text>
+                            <text x="21" y="38" class="clock-number minor">10</text>
+                            <text x="37" y="21" class="clock-number minor">11</text>
+                            <text x="60" y="15" class="clock-number major">12</text>
+                        </g>
+                        <g class="analog-clock_hands">
+                            <path d="M 60 60 V 20" id="hour-hand"></path>
+                            <path d="M 60 60 V 6" id="minute-hand"></path>
+                            <path d="M 60 60 V 5" id="seconds-hand"></path>
+                            <path d="M63 60a3 3 0 11-6 0 3 3 0 016 0z" class="analog-clock__pin"></path>
+                            <path d="M61 60a1 1 0 10-2 0 1 1 0 002 0z" class="analog-clock__pin-inner"></path>
+                        </g> 
+                    </g>
+                </svg>
+                <h2 id="digital-clock"></h2>
+                <h3 id="digital-date"></h3>
+                <h3>London, UK</h3>
+            </div>
+            <div class="clock" id="location-newyork">
+                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" alt="Visual analog clock" viewBox="0 0 120 120" class="analog-clock">
+                    <g>
+                        <path d="M 0 60 c 0 33 28 60 60 60 s 60 -26 60 -60 S 93.137 0 60 0 S 0 26 0 60 z" class="analog-clock_face"></path>
+                        <g class="analog-Numbers">
+                            <text x="82" y="21" class="clock-number minor">1</text>
+                            <text x="99" y="37" class="clock-number minor">2</text>
+                            <text x="105" y="60" class="clock-number major">3</text>
+                            <text x="99" y="82" class="clock-number minor">4</text>
+                            <text x="82" y="99" class="clock-number minor">5</text>
+                            <text x="60" y="105" class="clock-number major">6</text>
+                            <text x="38" y="99" class="clock-number minor">7</text>
+                            <text x="21" y="82" class="clock-number minor">8</text>
+                            <text x="15" y="60" class="clock-number major">9</text>
+                            <text x="21" y="38" class="clock-number minor">10</text>
+                            <text x="37" y="21" class="clock-number minor">11</text>
+                            <text x="60" y="15" class="clock-number major">12</text>
+                        </g>
+                        <g class="analog-clock_hands">
+                            <path d="M 60 60 V 20" id="hour-hand"></path>
+                            <path d="M 60 60 V 6" id="minute-hand"></path>
+                            <path d="M 60 60 V 5" id="seconds-hand"></path>
+                            <path d="M63 60a3 3 0 11-6 0 3 3 0 016 0z" class="analog-clock__pin"></path>
+                            <path d="M61 60a1 1 0 10-2 0 1 1 0 002 0z" class="analog-clock__pin-inner"></path>
+                        </g> 
+                    </g>
+                </svg>
+                <h2 id="digital-clock"></h2>
+                <h3 id="digital-date"></h3>
+                <h3>New York, US</h3>
+            </div>
+            <div class="clock" id="location-tokyo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" alt="Visual analog clock" viewBox="0 0 120 120" class="analog-clock">
+                    <g>
+                        <path d="M 0 60 c 0 33 28 60 60 60 s 60 -26 60 -60 S 93.137 0 60 0 S 0 26 0 60 z" class="analog-clock_face"></path>
+                        <g class="analog-Numbers">
+                            <text x="82" y="21" class="clock-number minor">1</text>
+                            <text x="99" y="37" class="clock-number minor">2</text>
+                            <text x="105" y="60" class="clock-number major">3</text>
+                            <text x="99" y="82" class="clock-number minor">4</text>
+                            <text x="82" y="99" class="clock-number minor">5</text>
+                            <text x="60" y="105" class="clock-number major">6</text>
+                            <text x="38" y="99" class="clock-number minor">7</text>
+                            <text x="21" y="82" class="clock-number minor">8</text>
+                            <text x="15" y="60" class="clock-number major">9</text>
+                            <text x="21" y="38" class="clock-number minor">10</text>
+                            <text x="37" y="21" class="clock-number minor">11</text>
+                            <text x="60" y="15" class="clock-number major">12</text>
+                        </g>
+                        <g class="analog-clock_hands">
+                            <path d="M 60 60 V 20" id="hour-hand"></path>
+                            <path d="M 60 60 V 6" id="minute-hand"></path>
+                            <path d="M 60 60 V 5" id="seconds-hand"></path>
+                            <path d="M63 60a3 3 0 11-6 0 3 3 0 016 0z" class="analog-clock__pin"></path>
+                            <path d="M61 60a1 1 0 10-2 0 1 1 0 002 0z" class="analog-clock__pin-inner"></path>
+                        </g> 
+                    </g>
+                </svg>
+                <h2 id="digital-clock"></h2>
+                <h3 id="digital-date"></h3>
+                <h3>Tokyo, Japan</h3>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,5 @@
+1. Add task (Task, Date, Color)
+2. Delete task
+3. Edit task
+4. Customize tasks and orders
+5. Short tasks by time order or color order

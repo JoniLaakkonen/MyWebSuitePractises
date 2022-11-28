@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500&display=swap');
+:root {
+    --mainbg-color: radial-gradient(circle at 90% -50%, #e8fab1aa 30%, #40a2ccaa 60%, #05158faa 90%);
+    --box-color: #fafffe;
+    --addfield-border: #40a2ccaa;
+    --addBtn-bg: #40a2ccaa;
+    --addBtn-text: #ffffff;
+    --tasklist-bg: #efefef;
+    --tasklist-bg-hover: #e7e7e7;
+    --task-border: #000;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+h1,h2,h3,p {
+    color: rgb(24, 24, 24);
+    cursor: pointer;
+}
+h1 {
+    font-size: 46px;
+}
+p{
+    font-size: 18px;
+}
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--mainbg-color);
+}
+.cntr_tdl{
+    display: flex;
+    width: 400px;
+    min-height: 300px;
+    padding: 15px;
+    height: auto;
+    flex-flow: column;
+    background: var(--box-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cntr_addtask{
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+#field_addTask{
+    height: 100%;
+    width: calc(400px - 30px - 55px);
+    font-size: 20px;
+    padding: 2px;
+    border: none;
+    border-bottom: 2px solid var(--addfield-border);
+    transition: 600ms ease-in;
+}
+#field_addTask:focus{
+    outline: none;
+}
+#field_addTask:focus::placeholder{
+    color: transparent;
+}
+#btn_addTask{
+    height: 100%;
+    width: 50px;
+    font-size: 40px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25%;
+    background-color: var(--addBtn-bg);
+    color: var(--addBtn-text);
+    cursor: pointer;
+    transition: 600ms ease-in;
+}
+
+#taskList {
+    margin-top: 1rem;
+}
+#taskList li {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    background-color: var(--tasklist-bg);
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: 70ms ease-in;
+    cursor: default;
+}
+#taskList li span{
+    position: absolute;
+    height: 100%;
+    right: 0px;
+    top: -50px;
+    transition: 100ms ease-in;
+}
+#taskList li button{
+    height: 100%;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: large;
+}
+#taskList li button:first-child{
+    background-color: var(--addBtn-bg);
+}
+#taskList li button{
+    background-color: #ff4848;
+}
+#taskList li:hover{
+    background-color: var(--tasklist-bg-hover);
+}
+#taskList li:hover span{
+    top: 0;
+}
+@media screen and (max-width: 400px) {
+    .cntr_tdl{
+        width: 100%;
+        min-height: 300px;
+    }
+    #field_addTask{
+        height: 100%;
+        width: 100%;
+    }
+    #btn_addTask{
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+}
