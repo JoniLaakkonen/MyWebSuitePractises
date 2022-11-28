@@ -1,3 +1,3 @@
-@joni 2021
+@joni 2022
 
-Joni laakkonen Website basics here
+Joni laakkonen Website practises here
